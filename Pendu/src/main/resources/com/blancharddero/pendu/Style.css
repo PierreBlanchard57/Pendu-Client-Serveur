@@ -1,0 +1,14 @@
+.background{
+    -fx-background-color: linear-gradient(to top,rgba(108,108,218,0.57),#d4dcf5);
+}
+.roomcontent{
+    -fx-background-color: linear-gradient(to top, rgba(147, 147, 255, 0.57),#d4dcf5);
+    -fx-border-color: black;
+}
+.button{
+    -fx-background-color: linear-gradient(to top, rgba(243, 246, 217, 0.57), #ffe786);
+}
+.chatbackground{
+    -fx-background-color: linear-gradient(to top, rgb(0, 0, 0), #464646);
+    -fx-border-color: black;
+}

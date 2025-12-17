@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Arc?>
+<?import javafx.scene.shape.Circle?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="348.0" prefWidth="344.0" styleClass="background" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.blancharddero.pendu.Loader">
+   <children>
+      <Label fx:id="waitText" layoutX="100.0" layoutY="285.0" text="Attente de réponse du serveur..." />
+      <Pane fx:id="loader" layoutX="101.0" layoutY="76.0" prefHeight="133.0" prefWidth="142.0">
+         <children>
+            <Circle fill="#b4b5b7" layoutX="70.0" layoutY="67.0" radius="70.0" stroke="BLACK" strokeType="INSIDE" />
+            <Arc fill="DODGERBLUE" layoutX="70.0" layoutY="78.0" length="45.0" radiusX="80.0" radiusY="81.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+            <Circle fill="#b2c9dc" layoutX="71.0" layoutY="67.0" radius="54.0" stroke="BLACK" strokeType="INSIDE" styleClass="background" />
+         </children>
+      </Pane>
+   </children>
+</Pane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="260.0" prefWidth="230.0" styleClass="roomcontent" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="word" layoutX="67.0" layoutY="32.0" />
+      <Label layoutX="28.0" layoutY="36.0" text="Mot:" />
+      <Slider fx:id="livesSlider" blockIncrement="1.0" layoutX="60.0" layoutY="106.0" majorTickUnit="1.0" max="26.0" minorTickCount="0" snapToTicks="true" />
+      <Label layoutX="28.0" layoutY="68.0" text="Nombre d'echecs tolérées:" />
+      <Button fx:id="play" layoutX="82.0" layoutY="190.0" mnemonicParsing="false" onAction="#play" prefHeight="37.0" prefWidth="80.0" text="Jouer">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="lives" layoutX="176.0" layoutY="59.0" text="0">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="timer" layoutX="88.0" layoutY="122.0" mnemonicParsing="false" onAction="#toggleMinutes" text="Timer" />
+      <Slider fx:id="minutesSlider" blockIncrement="1.0" disable="true" layoutX="60.0" layoutY="148.0" majorTickUnit="1.0" max="15.0" min="1.0" minorTickCount="0" snapToTicks="true" />
+      <Label layoutX="154.0" layoutY="171.0" text="Minutes" />
+      <Label fx:id="minutes" layoutX="133.0" layoutY="160.0" text="1">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

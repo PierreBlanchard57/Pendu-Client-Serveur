@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.RangeSlider?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="480.0" styleClass="background" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="124.0" layoutY="22.0" text="Paramètres de jeu">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font></Label>
+      <Button fx:id="play" layoutX="183.0" layoutY="344.0" mnemonicParsing="false" onAction="#onPlay" prefHeight="55.0" prefWidth="117.0" text="Jouer" />
+      <RadioButton fx:id="radioRandom" layoutX="153.0" layoutY="111.0" mnemonicParsing="false" onAction="#toggleRandom" selected="true" text="Longueur aléatoire" />
+      <RadioButton fx:id="radioDefine" layoutX="153.0" layoutY="129.0" mnemonicParsing="false" onAction="#toggleRandom" text="Longueur définie:" />
+      <Label layoutX="113.0" layoutY="210.0" text="Nombre d'echecs tolérées" />
+      <CheckBox fx:id="timed" layoutX="108.0" layoutY="276.0" mnemonicParsing="false" onAction="#toggleMinutes" text="Temps limité" />
+      <Button fx:id="back" layoutX="26.0" layoutY="17.0" mnemonicParsing="false" onAction="#back" rotate="180.0" text="➔">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Button>
+      <RangeSlider fx:id="length" blockIncrement="1.0" disable="true" highValue="25.0" layoutX="29.0" layoutY="162.0" lowValue="3.0" majorTickUnit="1.0" max="25.0" min="3.0" minorTickCount="0" prefHeight="37.0" prefWidth="424.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" />
+      <Slider fx:id="lives" blockIncrement="1.0" layoutX="265.0" layoutY="208.0" majorTickUnit="1.0" max="26.0" minorTickCount="0" showTickMarks="true" snapToTicks="true" />
+      <Label fx:id="livesLabel" layoutX="405.0" layoutY="199.0" text="0" textFill="#000040">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <Slider fx:id="minutes" blockIncrement="1.0" disable="true" layoutX="210.0" layoutY="278.0" majorTickUnit="1.0" max="15.0" min="1.0" minorTickCount="0" showTickMarks="true" snapToTicks="true" />
+      <Label fx:id="minutesLabel" layoutX="352.0" layoutY="265.0" text="1" textFill="#000040">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="385.0" layoutY="271.0" text="Minutes">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
