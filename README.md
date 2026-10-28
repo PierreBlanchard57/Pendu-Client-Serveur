@@ -8,8 +8,6 @@ Application de pendu Java fonctionnant en architecture client-serveur
 
 Ce projet est un projet d'etudes dont l'objectif était de concevoir un jeu du pendu en Java client-serveur où il est possible de se connecter au  serveur pour demarrer une partie,via le client.Il a été conçu en license bien avant mon master IHM.
 
-
-
 ### ✨Fonctionnalités
 
 Ce pendu possède de nombreuses fontionnalités qui ont dû être développées dans un laps de temps limité ce qui a donné quelques fontionalités incomplètes malgré une majorité de fonctionnalités fonctionnelles.
@@ -82,13 +80,12 @@ Ce pendu possède de nombreuses fontionnalités qui ont dû être développées 
 
 * **Langage** : Java
 * **Framework/Lib** : JavaFX
-* **IDE** : IntelliJ
 
 ---
 
 ## ⚙️ Installation
 
-Suivez ces étapes pour mettre en place votre environnement de développement.
+Suivez ces étapes pour Jouer au Pendu Client-Serveur.
 
 ### Prérequis
 
